@@ -1,0 +1,6 @@
+This is a demonstration of using 2 threads in Java.
+
+It demonstrates the use of synchronization as well, prt is a
+shared object w/ sync we get 0, 1, 2, 3, 4, nicely, w/o sync
+we get 0, 0, 1, 2, 1 ect. intermixed since several threads
+are accessing the object.

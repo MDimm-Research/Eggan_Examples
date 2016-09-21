@@ -1,0 +1,27 @@
+class Coffee extends Thread {
+   public static int j = 0;
+   public static int i = 8;
+   public synchronized void run() {
+//   public void run() {
+      int x = 0;
+      prt();
+//     while (x == 0);
+         yield();
+  }
+   public synchronized void prt()
+//   public void prt()
+   {
+//      int j = 0;
+         try{
+            sleep(i--);
+            System.out.println("i = " + i);
+         } catch ( Exception e ) {}
+//      while (j < 25) {
+//         System.out.println("I like coffee" + j++);
+//         try{
+//            sleep(5);
+//         } catch ( Exception e ) {}
+         yield();
+//     }
+   } 
+}

@@ -1,0 +1,10 @@
+class Coffee extends Thread {
+//   public synchronized void run() {
+   public void run() {
+      int x = 0;
+      prt s = new prt();
+      s.pr();
+//     while (x == 0);
+         yield();
+   }
+}
